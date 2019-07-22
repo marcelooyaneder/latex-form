@@ -1,0 +1,194 @@
+\documentclass[10pt]{article}
+
+\input{preambulo/preamble}
+
+%para hacer referencia a ecuaciones utilizar \eqref
+%para hacer citas al píe de pagina y referencias utilizar \footcite{•}
+
+\begin{document}
+%------------------------------------------------------------------------------------------------------------------
+%-------------------------------PORTADA-------------------------------------------------------------------
+\begin{titlepage}
+
+\begin{flushleft}
+    \begin{tabular}{ll} %NEED \usepackage{multirow}
+      \multirow{4}{2cm}{\includegraphics[height=0.1\textheight]{imagenes/logo_diq.jpeg} }&UNIVERSIDAD DE SANTIAGO DE CHILE  \\
+      &FACULTAD DE INGENIERÍA\\
+      &DEPARTAMENTO DE INGENIERÍA QUÍMICA \\
+    \end{tabular}
+\end{flushleft}
+
+
+\begin{center}
+\vspace*{8cm}
+ 
+\textbf{INFORME N$\bm{^{\circ}}$ 1}\\ %TITULO DE LA EXPERIENCIA
+\textbf{NOMBRE DE LA EXPERIENCIA} 
+       %\vspace{0.5cm}
+        %Thesis Subtitle
+\vfill 
+% \vspace{0.8cm}
+\end{center}
+   
+\begin{flushright}
+   \begin{tabular}{lll}
+   CURSO       &:& Nombre del Curso.\\
+   INTEGRANTES &:& Juan Pérez.\\
+               & & Juan Pérez.\\
+               & & Juan Pérez.\\
+   PROFESOR    &:& Profe Sor.\\
+   AYUDANTE    &:& Ayud Ante.\\
+   FECHA EXPERIENCIA &:& 18 de Junio de 2019.\\
+   FECHA ENTREGA     &:& 19 de Junio de 2019.\\
+   \end{tabular}
+\end{flushright}
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+%----------------------------------------RESUMEN--------------------------------
+\pagestyle{empty} %suprimir numeración 
+%----------------------------------------------------------------------------------------
+\section*{RESUMEN}
+
+\input{secciones/resumen}
+
+\blindtext %texto para prueba
+%-----------------------------------------------------------------------------------------
+%----------------------------------ÍNDICE.-----------------------------------
+%\newpage 
+%\tableofcontents %%FALTA CORREGIR
+%\newpage
+%\newrgbcolor{xdxdff}{0.49 0.49 1}
+%\newrgbcolor{ffqqtt}{1 0 0.2}
+%\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=*,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+
+
+
+
+%-----------------------------------------------------------------------------------------
+%----------------------------------OBJETIVOS.-----------------------------------
+\newpage
+\pagestyle{fancy}
+\setcounter{page}{2} %empezar numeración desde está pagina
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{OBJETIVOS}
+
+\input{secciones/objetivos}
+
+\blindmathpaper %texto para prueba
+%-----------------------------------------------------------------------------------------
+%----------------------------------MARCO TEÓRICO.-----------------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{MARCO TEÓRICO}
+
+\input{secciones/marcoteorico}
+
+\blindmathpaper %texto para prueba
+
+%------------------------------------------------------------------------------------------
+%---------------------APARATOS Y ACCESORIOS--------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{APARATOS Y ACCESORIOS}
+
+\input{secciones/aparatosyaccesorios}
+
+\blindmathpaper %texto para prueba
+
+
+%-------------------------------------------------------------------------------------------
+%------------------------------PROCEDIMIENTO EXPERIMENTAL
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{PROCEDIMIENTO EXPERIMENTAL}
+
+\input{secciones/procedimientoexperimental}
+
+\blindmathpaper %texto para prueba
+
+
+%-------------------------------------------------------------------------------------------
+%-----------------------------------------DATOS----------------------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{DATOS}
+
+\input{secciones/datos}
+
+\blindmathpaper %texto para prueba
+
+
+%-------------------------------------------------------------------------------------------
+%----------------RESULTADOS Y DISCUSIONES----------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{RESULTADOS Y DISCUSIONES}
+
+\input{secciones/resultadosydiscusiones}
+
+\blindmathpaper %texto para prueba
+
+
+%-------------------------------------------------------------------------------------------
+%-----------------------------CONCLUSIONES------------------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{CONCLUSIONES}
+
+\input{secciones/conclusiones}
+
+\blindmathpaper %texto para prueba
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------REFERENCE LIST--------------------------------
+\newpage
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+%----------------------------------------------------------------------------------------
+\section{BIBLIOGRAFÍA}
+\bibliography{bibliografia} 
+\bibliographystyle{apalike} 
+\
+
+%-------------------------------------------------------------------------------------------
+%-----------------------------APENDICES-------------------------------------------
+\newpage
+\pagestyle{empty} %suprimir numeración 
+\setcounter{equation}{0} %empezar numeración desde 1 para ecuaciones, AGREGAR ESTO ANTES DE CADA SUBSECCIÓN PARA COMENZAR CUENTA DESDE 1
+\setcounter{figure}{0} %empezar numeración desde 1 para figuras
+\setcounter{table}{0} %empezar numeración desde 1 para tablas
+\renewcommand{\thesubsection}{APÉNDICE \Alph{subsection}:}                            %REENUMERACION DE SUBSECCIONES
+\renewcommand{\thesubsubsection}{\Alph{subsection}.\arabic{subsubsection}:}       %REENUMERACION DE SUBSUBSECCIONES
+\renewcommand{\theequation}{.\Alph{subsection}\arabic{equation}} %definición enumeración de ecuaciones
+\renewcommand{\thefigure}{\Alph{subsection}.\arabic{figure}} %definición enumeración de ecuaciones
+\renewcommand{\thetable}{\Alph{subsection}.\arabic{table}} %definición enumeración de tablas
+
+%----------------------------------------------------------------------------------------
+\section*{APÉNDICES}
+
+\input{secciones/append}
+
+\end{document}

@@ -1,0 +1,76 @@
+%--------------------BLOQUE DE FORMATO-------------
+\usepackage[letterpaper,left=3cm,top=2.5cm,right=3cm,bottom=2.5cm]{geometry} %margenes
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd} 
+\usepackage[utf8]{inputenc} %carácteres acentuados
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx} %Package to insert images and graphics
+\usepackage{listings} %Package to listings enviornment e.g. MATLAB, Python, Fortran.
+\usepackage{color}
+\usepackage{bm}
+\usepackage{nicefrac} %Para las fracciones
+\usepackage{booktabs}
+
+
+\usepackage[spanish,mexico]{babel} % Language hyphenation and typographical rules
+%\usepackage[spanish,es-tabla]{babel}%cambia el idioma de "Table" a "Tabla"
+
+
+%------------PARA AJUSTAR FUENTES-----------------------------
+\usepackage[T1]{fontenc}%habilita caracteres no latinos
+\usepackage[scaled]{helvet}%fuente arial=helvet
+\renewcommand*\familydefault{\sfdefault}%fuente
+\linespread{1.5} % Line spacing
+%------------------------------------------------------------------------------
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\renewcommand{\headrulewidth}{0pt} %eliminar regla del encabezado
+\fancyfoot[RO,RE]{\thepage} % Custom footer text
+
+\usepackage{titlesec} %modifición de secciones
+\titleformat{\section}[hang]{\normalfont\bfseries\centering}{\thesection}{5pt.}{} %modificación secciones
+\titleformat{\subsection}[hang]{\normalfont\bfseries}{\thesubsection}{5pt}{} %modificación subsecciones
+\titleformat{\subsubsection}[hang]{\normalfont\bfseries}{\thesubsubsection}{5pt}{} %modificación subsecciones
+
+\usepackage{multirow} %para combinar en tablas, usado para la portada
+\usepackage{float} %para el float H en tablas
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}} %definición enumeración de ecuaciones
+% para hacer referencia a ecuaciones utilizar \eqref{•}
+
+%reedifiniciónn para hacer enumeración por secciones y subsecciones
+\renewcommand{\labelenumi}{\arabic{section}.\arabic{enumi}}
+\renewcommand{\labelenumii}{\arabic{section}.\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{section}.\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{section}.\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}} %definición enumeración de ecuaciones
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}} %definición enumeración de tablas
+
+
+%----------New MathCommands by Luis Henríquez    
+\newcommand{\der}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dero}[2]{\frac{d #1}{d #2}}
+\newcommand{\lapl}[4]{\der{}{#1} \p{#2 \der{#3}{#1}}_{#4}}
+\newcommand{\p}[1]{\left( #1 \right)} %Parentheses
+\newcommand{\ps}[1]{\left[ #1 \right]} %Square
+\newcommand{\pc}[1]{\left \{ #1 \right \}} %Curve
+\newcommand{\pa}[1]{\left \langle #1 \right \rangle} %Angle
+
+
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}
+
+%QUITAR O CAMBIAR EL TITULO DE REFERENCES PARA BIBTEX
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+%\footcite{} se utiliza para agregar citas bibliográficas al píe de pagina y en la pagina de referencias
+
+%-------------------------------FIN BLOQUE DE INSTRUCCIONES
