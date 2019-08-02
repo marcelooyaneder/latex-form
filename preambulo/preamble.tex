@@ -19,19 +19,15 @@
 \usepackage[spanish,mexico]{babel} % Utilización de reglas foneticas para español mexicano.
 
 %------------PARA AJUSTAR FUENTES-----------------------------
-\usepackage[T1]{fontenc}%habilita caracteres no latinos.
-\ifxetexorluatex
-  % Para compilar con xetex o lualatex.
-  \setmainfont{Arial}
-  \usepackage{arevmath}
-\else
-  % compilar con pdflatex
-  \usepackage[scaled]{helvet}%fuente arial=helvet.
-  \usepackage{sfmath} %paquete para ajustar la fuente matematica a serif.  
-  %\usepackage{mathastext} %formulas matematicas, de acuerdo a la fuente elegida.
-\fi
+\usepackage[T1]{fontenc}%habilita caracteres no latinos
+\usepackage[scaled]{helvet}%fuente arial=helvet
+\usepackage{sfmath} %formulas matematicas, de acuerdo a la fuente elegida.
+%%%%%%%%%PROCESAR CON XELATEX%%%%
+%\usepackage{Arial}
+%\usepackage{arevmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*\familydefault{\sfdefault}%fuente
-\linespread{1.5} % Interlineado
+\linespread{1.5} % Line spacing
 %------------------------------------------------------------------------------
 
 \usepackage{fancyhdr} % Modificar encabezados y pies de paginas.
