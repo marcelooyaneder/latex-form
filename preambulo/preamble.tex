@@ -12,9 +12,8 @@
 \usepackage{nicefrac} %Para las fracciones
 \usepackage{booktabs}
 \usepackage{url}
-
-\usepackage{parskip}
-\setlength{\parindent}{0cm}
+\usepackage{parskip} %modificación de sangría
+\setlength{\parindent}{0cm} %se hace la sangría nula
 
 \usepackage[spanish,mexico]{babel} % Utilización de reglas foneticas para español mexicano.
 
@@ -75,5 +74,9 @@
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 %\footcite{} se utiliza para agregar citas bibliográficas al píe de pagina y en la pagina de referencias
+%modificación a la forma de hacer referencias en el documento.
+\usepackage{prettyref} %paquetes para hacer referencia de mejor manera
+\newrefformat{tab}{tabla \ref{#1}}
+\newrefformat{fig}{figura \ref{#1}}
 
 %-------------------------------FIN BLOQUE DE INSTRUCCIONES--------------------------------------------------------------------
